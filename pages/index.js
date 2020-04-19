@@ -1,12 +1,11 @@
-import Link from 'next/link'
+import React from 'react'
+
+import Layout from '../components/myLayout';
 
 export default function Index() {
   return (
-    <div>
-      <Link href='/about'>
-        <a title='About Page'>About Page</a>
-      </Link>
-      <p>App</p>
-    </div>
+    <Layout>
+      <p>Next Page</p>
+    </Layout>
   )
 }
