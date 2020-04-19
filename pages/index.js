@@ -1,11 +1,7 @@
 import React from 'react'
 
-import Layout from '../components/myLayout';
+import withLayout from '../components/myLayout';
 
-export default function Index() {
-  return (
-    <Layout>
-      <p>Next Page</p>
-    </Layout>
-  )
-}
+const Index = () => <p>Next Page</p>
+
+export default withLayout(Index)
