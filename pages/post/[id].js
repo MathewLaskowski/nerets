@@ -1,15 +1,15 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-import withLayout from '../components/myLayout';
+import withLayout from '../../components/myLayout';
 
 const Page = () => {
   const router = useRouter();
-  const { title } = router.query
+  const { id } = router.query
 
   return (
     <>
-      <h1>{title}</h1>
+      <h1>{id}</h1>
       <p>This is post content</p>
     </>
   )

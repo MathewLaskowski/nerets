@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const PostLink = ({ title }) => (
   <li>
-    <Link href={`/post?title=${title}`}>
+    <Link href={'/post/[id]'} as={`/post/${title.toLowerCase()}`}>
       <a>{title}</a>
     </Link>
   </li>
